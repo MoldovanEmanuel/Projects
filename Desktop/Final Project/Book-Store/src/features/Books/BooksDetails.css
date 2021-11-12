@@ -1,0 +1,92 @@
+.bookdetails {
+  padding-top: 50px;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 50px 50px 50px 50px 50px 50px 50px 50px 500px;
+  grid-template-areas:
+    "img title"
+    "img author"
+    "img language"
+    "img year"
+    "img pages"
+    "img genre"
+    "img isbn"
+    "img price"
+    ". description"
+    ". buy-btn-desc";
+}
+
+.img {
+  grid-area: img;
+  width: 70%;
+}
+
+.title {
+  grid-area: title;
+}
+
+.language {
+  grid-area: language;
+}
+
+.author {
+  grid-area: author;
+}
+
+.year {
+  grid-area: year;
+}
+
+.descirption {
+  grid-area: description;
+}
+
+.genre {
+  grid-area: genre;
+}
+
+.price {
+  grid-area: price;
+}
+
+.pages {
+  grid-area: pages;
+}
+
+.isbn {
+  grid-area: isbn;
+}
+
+span {
+  font-weight: 700;
+}
+
+.buy-btn-des {
+  grid-area: buy-btn-desc;
+  width: 100px;
+  text-decoration: none;
+  background-color: black;
+  color: white;
+  border: 1px solid black;
+  width: 120px;
+  padding: 10px;
+}
+
+.buy-btn-des:hover {
+  color: crimson;
+}
+
+.edit-book {
+  text-decoration: none;
+  background-color: black;
+  color: white;
+  border: 1px solid black;
+  width: 120px;
+  padding: 10px;
+}
+
+.edit-book:hover {
+  color: crimson;
+}

@@ -1,0 +1,168 @@
+{
+  "users": [
+    {
+      "email": "ema@ceva.com",
+      "password": "$2a$10$WD2mtc0TUSff6u8mRV.Z/O3LlV3wrTFkI8/MWgvbIfmlN9PemHCsy",
+      "fName": "Ema",
+      "lName": "Moldovan",
+      "id": 4,
+      "role": "Admin"
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "Ema",
+    "email": "ema@ceva.com",
+    "fName": "Ema",
+    "lName": "Moldovan",
+    "password": "parola",
+    "role": "Admin",
+    "id": 4
+  },
+  "books": [
+     {
+      "id": 1,
+      "title": "The Monk",
+      "author": "Matthew Lewis",
+      "year": 1796,
+      "genre": "Horror",
+      "language": "English",
+      "pages": "324",
+      "ISBN": "9781840221855",
+      "price": 30,
+      "image": "../images/the-monk.jpg",
+      "description": "Savaged by critics for its supposed profanity and obscenity, and bought in large numbers by readers eager to see whether it lived up to its lurid reputation, The Monk became a success de scandale when it was published in 1796 - not least because its author was a member of parliament and only twenty years old. It recounts the diabolical decline of Ambrosio, a Capuchin superior, who succumbs first to temptations offered by a young girl who has entered his monastery disguised as a boy, and continues his descent with increasingly depraved acts of sorcery, murder, incest and torture. Combining sensationalism with acute psychological insight, this masterpiece of Gothic fiction is a powerful exploration of how violent and erotic impulses can break through the barriers of social and moral restraint",
+      "comments": [
+        {
+          "username": "Barbu",
+          "text": "I really hate this book"
+        },
+    {
+      "id": 2,
+      "title": "The Haunting Of Hill House",
+      "author": "Shirley Jackson",
+      "year": 1959,
+      "genre": "Horror",
+      "language": "English",
+      "pages": 246,
+      "ISBN": "978-0-241-38969-0",
+      "price": 19.99,
+      "image": "../images/the-hhh1.jpg",
+      "description": "Four seekers have arrived at the rambling old pile known as Hill House: Dr. Montague, an occult scholar looking for solid evidence of psychic phenomena; Theodora, his lovely assistant; Luke, the future inheritor of the estate; and Eleanor, a friendless, fragile young woman with a dark past. As they begin to cope with horrifying occurrences beyond their control or understanding, they cannot possibly know what lies ahead. For Hill House is gathering its powers - and soon it will choose one of them to make its own. ",
+      "comments": []
+    },
+    {
+      "id": 3,
+      "title": "The Raven and Oher Selected Poems",
+      "author": "Edgar Allan Poe",
+      "year": 2016,
+      "genre": "Horror",
+      "language": "English",
+      "pages": 156,
+      "ISBN": "978-0-00-818051-5",
+      "image": "../images/the-raven.jpg",
+      "price": 15,
+      "description": "This selection of Edgar Allan Poe’s poetical works includes some of his best-known pieces, including the triumphant, gleeful ‘The Bells’, the tragic ode ‘Annabel Lee’ and his famous gothic tour de force, ‘The Raven’. Some present powerful, nightmarish images of the macabre and bizarre, while others have at their heart a profound sense of love, beauty and loss. All are linguistic masterpieces that demonstrate Poe’s gift for marrying rhythm, form and meaning. An American writer of primarily prose and literary criticism, Edgar Allen Poe never ceased writing poetry throughout his turbulent life, and is today regarded as a central figure of American literary romanticism. ",
+      "comments": []
+    },
+    {
+      "id": 4,
+      "title": "Tales of Mystery and Imagination",
+      "author": "Edgar Allan Poe",
+      "year": 2011,
+      "genre": "Horror",
+      "language": "English",
+      "pages": 496,
+      "ISBN": "978-0-00-742022-3",
+      "price": 19.99,
+      "image": "../images/the-poe.jpg",
+      "description": "Including Poe's most terrifying, grotesque and haunting short stories, Tales of Mystery and Imagination is the ultimate collection of the infamous author's macabre works. Considered to be one of the earliest American writers to encapsulate the genre of detective-fiction, the collection features some of his most popular tales.'The Gold-Bug' is the only tale that was popular in his lifetime, whereas 'The Black Cat', 'The Pit and the Pendulum' and 'The Murders in the Rue Morgue' became more widely read after his death. Focussing on the internal conflict of individuals, the power of the dead over the living, and psychological explorations of darker human emotion that appear to anticipate Sigmund Freud's later theories on the psyche, Poe's Gothic terror stories are considered masterpieces the world over.",
+      "comments": []
+    },
+    {
+      "id": 5,
+      "title": "Necronomicon",
+      "author": "H. P. Lovecraft",
+      "year": 2008,
+      "genre": "Horror",
+      "language": "English",
+      "pages": 890,
+      "ISBN": "978 0 57508 1 574",
+      "price": 50,
+      "image": "../images/the-necro.jpg",
+      "description": "H.P. Lovecraft's tales of the tentacled Elder God Cthulhu and his pantheon of alien deities were initially written for the pulp magazines of the 1920s and '30s. These astonishing tales blend elements of horror, science fiction and cosmic terror that are as powerful today as they were when they were first published.This handsome leatherbound tome collects together the very best of Lovecraft's tales of terror, including the complete Cthulhu Mythos cycle, just the way they were originally published. It will introduce a whole new generation of readers to Lovecraft's fiction, as well as being a must-buy for those fans who want all his work in a single, definitive, highly attractive volume.",
+      "comments": []
+    },
+    {
+      "id": 6,
+      "title": "The Outsider",
+      "author": "Stephen King",
+      "year": 2019,
+      "genre": "Horror",
+      "language": "English",
+      "pages": 695,
+      "ISBN": "978-606-43-0631-9",
+      "price": 25,
+      "image": "../images/the-outsider.jpg",
+      "description": "A horrifying crime. Water-tight evidence points to a single suspect. Except he was seventy miles away, with an iron-clad alibi. Detective Anderson sets out to investigate the impossible: how can the suspect have been both at the scene of the crime and in another town?",
+      "comments": []
+    },
+    {
+      "id": 7,
+      "title": "Salem's Lot",
+      "author": "Stephen King",
+      "year": 2011,
+      "genre": "Horror",
+      "language": "English",
+      "pages": 751,
+      "ISBN": "978 1 444 70814 1",
+      "price": 23,
+      "image": "../images/the-salem.jpg",
+      "description": "Ben Mears has returned to Jerusalem's Lot in the hopes that living in an old mansion, long the subject of town lore, will help him cast out his own devils and provide inspiration for his new book. But when two young boys venture into the woods and only one comes out alive, Mears begins to realize that there may be something sinister at work and that his hometown is under siege by forces of darkness far beyond his control.",
+      "comments": []
+    },
+    {
+      "id": 8,
+      "title": "Down There",
+      "author": "J.-K. Huysmans",
+      "year": 2003,
+      "genre": "Horror",
+      "language": "English",
+      "pages": 296,
+      "ISBN": "0140447679",
+      "price": 27,
+      "image": "../images/the-downthere.jpg",
+      "description": "Durtal, a shy, censorious man, is writing a biography of Gilles de Rais, the monstrous fifteenth-century child-murderer thought to be the original for 'Bluebeard'. Bored and disgusted by the vulgarity of everyday life, Durtal seeks spiritual solace by immersing himself in another age. But when he starts asking questions about Gilles's involvement in satanic rituals and is introduced to the exquisitely evil madame Chantelouve, he is soon drawn into a twilight world of black magic and erotic devilry in fin-de- siècle Paris.",
+      "comments": []
+    },
+    {
+      "id": 9,
+      "title": "Reprieve",
+      "author": "James Han Mattson",
+      "year": 2021,
+      "genre": "Horror",
+      "language": "English",
+      "pages": 544,
+      "ISBN": "0063079917",
+      "price": 20,
+      "image": "../images/the-reprieve.jpg",
+      "description": "A chilling and blisteringly relevant literary novel of social horror centered around a brutal killing that takes place in a full-contact haunted escape room—a provocative exploration of capitalism, hate politics, racial fetishism, and our obsession with fear as entertainment.",
+      "comments": []
+    }
+      ]
+    }
+  ]
+}

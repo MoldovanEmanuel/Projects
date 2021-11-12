@@ -1,0 +1,53 @@
+.main-menu {
+  display: flex;
+  gap: 0.5rem;
+  list-style: none;
+  flex-grow: 1;
+  margin-top: 2%;
+
+  margin: 0;
+}
+
+.main-menu li {
+  background: #262626;
+  width: 170px;
+  border: 1px solid #fff;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  float: left;
+  color: #fff;
+  font-size: 14px;
+  position: relative;
+  font-family: big john;
+}
+
+.main-menu a {
+  text-decoration: none;
+  color: white;
+}
+
+.main-menu a:hover {
+  color: crimson;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+
+.logo:hover {
+  color: crimson;
+}
+
+.nav {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.push-right {
+  margin-left: auto;
+}

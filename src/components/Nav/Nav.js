@@ -15,56 +15,65 @@ export function Nav() {
 
   return (
     <nav className={styles.nav}>
+
       <Link to="/" className={styles.logo}>
-        My Awesome Site
+        SpookStore
       </Link>
+
       <ul className={styles['main-menu']}>
+
         <li>
           <NavLink exact to="/" activeClassName={styles.active}>
             Home
           </NavLink>
         </li>
-        <li>
-          <NavLink to="/communication" activeClassName={styles.active}>
-            Communication
-          </NavLink>
-        </li>
 
         <li>
-          <NavLink to="/albums" activeClassName={styles.active}>
-            Albums
+          <NavLink to="/contact" activeClassName={styles.active}>
+            Contact
           </NavLink>
         </li>
 
         {!auth?.user && (
           <>
+
             <li className={styles['push-right']}>
               <NavLink to="/login" activeClassName={styles.active}>
                 Login
               </NavLink>
             </li>
+
             <li>
               <NavLink to="/register" activeClassName={styles.active}>
                 Register
               </NavLink>
             </li>
+
           </>
         )}
 
         {auth?.user && (
           <>
             <li>
-              <NavLink to="/todos" activeClassName={styles.active}>
-                Todos
+              <NavLink to="/books" activeClassName={styles.active}>
+                Books
               </NavLink>
             </li>
+
+             <li>
+              <NavLink to="/books/add" activeClassName={styles.active}>
+                Add Book
+              </NavLink>
+            </li>
+
 
             <li className={styles['push-right']}>
               Welcome,{' '}
               <NavLink to="/profile" activeClassName={styles.active}>
-                {auth.user.email}
+                {auth.user.fName}
               </NavLink>
             </li>
+
             <li>
               <a href="/" onClick={handleLogout}>
                 Logout

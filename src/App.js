@@ -1,18 +1,18 @@
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
-import { Parent } from './features/Communication/Parent';
-import { Counter } from './features/Counter/Counter';
-import { TodoList } from './features/Todos/TodoList';
 import { Nav } from './components/Nav/Nav';
 import { Auth } from './features/Auth/Auth';
 import { AuthContextProvider } from './features/Auth/Auth.context';
-import { PrivateRoute } from './components/PrivateRoute';
-import { AlbumList } from './features/Albums/AlbumList';
-import { AlbumDetails } from './features/Albums/AlbumDetails';
-import { EditAlbum } from './features/Albums/EditAlbum';
+import { BooksList } from './features/Books/BookList';
+import { BooksDetails } from './features/Books/BooksDetails';
+import { EditBooks } from './features/Books/EditBooks';
+import { Home } from './features/Home/Home';
+import { Contact } from './features/Contact/Contact';
+import { Profile } from './features/Profile/Profile';
 
-import 'bootstrap/dist/css/bootstrap.css';
+
 import './App.css';
+import { AddBook } from './features/Books/AddBook';
 
 function App() {
   return (
@@ -20,16 +20,14 @@ function App() {
       <AuthContextProvider>
         <Router>
           <Nav />
-          <Switch>
-            <Route exact path="/" component={Counter} />
-            <Route path="/communication" component={Parent} />
-            <PrivateRoute path="/todos" component={TodoList} />
-            <Route exact path="/albums" component={AlbumList} />
-            <Route exact path="/albums/edit/:id" component={EditAlbum} />
-            <Route path="/albums/:id" component={AlbumDetails} />
-            {/* <PrivateRoute path="/todos">
-              <TodoList />
-            </PrivateRoute> */}
+          <Switch>  
+            <Route exact path ="/" component={Home} />
+            <Route exact path="/books" component={BooksList} />
+            <Route exact path="/books/add" component={AddBook} />
+            <Route exact path="/books/edit/:id" component={EditBooks} />
+            <Route exact path="/books/:id" component={BooksDetails} />
+            <Route path="/contact" component={Contact}/>
+            <Route path="/profile" component={Profile}/>
             <Route path="/login" component={Auth} />
             <Route path="/register" component={Auth} />
             <Route path="*" component={() => <h1>404 Page not found</h1>} />

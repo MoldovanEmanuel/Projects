@@ -1,0 +1,108 @@
+.bookdetails {
+  padding-top: 50px;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 50px 50px 50px 50px 50px 50px 50px 50px 500px;
+  grid-template-areas:
+    "img title"
+    "img author"
+    "img language"
+    "img year"
+    "img pages"
+    "img genre"
+    "img isbn"
+    "img price"
+    ". resume"
+    ". buy-btn-desc";
+}
+
+.img {
+  grid-area: img;
+  width: 70%;
+}
+
+.title {
+  grid-area: title;
+  display: flex;
+}
+
+.language {
+  grid-area: language;
+  display: flex;
+}
+
+.author {
+  grid-area: author;
+  display: flex;
+}
+
+.year {
+  grid-area: year;
+  display: flex;
+}
+
+.resume {
+  grid-area: resume;
+  display: flex;
+}
+
+.resume-text {
+  display: flex;
+  margin-top: 1px;
+  font-weight: 400;
+}
+
+.genre {
+  grid-area: genre;
+  display: flex;
+}
+
+.price {
+  grid-area: price;
+  display: flex;
+}
+
+.pages {
+  grid-area: pages;
+  display: flex;
+}
+
+.isbn {
+  grid-area: isbn;
+  display: flex;
+}
+
+span {
+  font-weight: 700;
+}
+
+.buy-btn {
+  grid-area: buy-btn-desc;
+  width: 100px;
+  text-decoration: none;
+  background-color: black;
+  color: white;
+  border: 1px solid black;
+  width: 80px;
+  padding: 10px;
+  font-weight: 700;
+}
+
+.buy-btn:hover {
+  color: crimson;
+}
+
+.edit-book {
+  text-decoration: none;
+  background-color: black;
+  color: white;
+  border: 1px solid black;
+  width: 150px;
+  padding: 10px;
+}
+
+.edit-book:hover {
+  color: crimson;
+}

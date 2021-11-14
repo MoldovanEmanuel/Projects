@@ -8,7 +8,7 @@ export function PrivateRoute({ children, component, ...rest }) {
     <Route
       {...rest}
       render={({ location }) => {
-        if (auth) {
+        if (!auth) {
           return children || React.createElement(component);
         }
 

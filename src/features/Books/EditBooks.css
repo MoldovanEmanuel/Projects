@@ -1,0 +1,59 @@
+.root {
+  height: 100%;
+  width: 100%;
+}
+
+.edit-container {
+  display: flex;
+  width: 70%;
+  height: 100%;
+  margin: 50px auto;
+  border: 1px solid grey;
+  border-radius: 20px;
+  background-color: black;
+}
+
+.edit-container form {
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 94%;
+}
+
+.edit-label-form {
+  width: 100%;
+  padding: 15px;
+  margin: 10px;
+  font-size: 20px;
+  color: white;
+}
+
+.edit-input-form {
+  margin-left: 25px;
+  width: 100%;
+  border: 1px solid grey;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.edit-textarea {
+  width: 100%;
+  height: 250px;
+  border-radius: 10px;
+}
+
+.edit-btn {
+  display: flex;
+  width: 75px;
+  padding: 20px;
+  margin: 25px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  color: white;
+  background-color: black;
+}
+
+.edit-btn:hover {
+  color: crimson;
+}

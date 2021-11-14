@@ -42,8 +42,6 @@ export function Auth() {
     setValues(newValues);
     setErrors(newErrors);
     setApiError('');
-    // setValues({ ...values, [e.target.name]: e.target.value });
-    // setErrors({ ...errors, [e.target.name]: '' });
   }
 
   async function handleSubmit(e) {
@@ -152,6 +150,33 @@ export function Auth() {
                 'is-invalid': errors['retype-password'],
               })}
             />
+            <label htmlFor="fName" className="form-label">
+              First Name
+            </label>
+             <input
+              type="text"
+              id="fName"
+              name="fName"
+              value={values['fName']}
+              onChange={handleChange}
+              className={clsx('form-control', {
+                'is-invalid': errors['fName'],
+              })}
+            />
+             <label htmlFor="lName" className="form-label">
+              Last Name
+            </label>
+             <input
+              type="text"
+              id="lName"
+              name="lName"
+              value={values['lName']}
+              onChange={handleChange}
+              className={clsx('form-control', {
+                'is-invalid': errors['lName'],
+              })}
+            />
+  
             <div className="invalid-feedback">{errors['retype-password']}</div>
           </>
         )}

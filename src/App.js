@@ -1,5 +1,4 @@
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-
 import { Nav } from './components/Nav/Nav';
 import { Auth } from './features/Auth/Auth';
 import { AuthContextProvider } from './features/Auth/Auth.context';
@@ -9,10 +8,11 @@ import { EditBooks } from './features/Books/EditBooks';
 import { Home } from './features/Home/Home';
 import { Contact } from './features/Contact/Contact';
 import { Profile } from './features/Profile/Profile';
-
+import { AddBook } from './features/Books/AddBook';
 
 import './App.css';
-import { AddBook } from './features/Books/AddBook';
+
+
 
 function App() {
   return (

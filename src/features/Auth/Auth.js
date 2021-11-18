@@ -1,7 +1,9 @@
-import clsx from 'clsx';
 import { useState } from 'react';
 import { useHistory, useLocation } from 'react-router-dom';
 import { useAuth } from './Auth.context';
+
+import './Auth.css'
+
 
 export function Auth() {
   const [values, setValues] = useState({
@@ -9,14 +11,6 @@ export function Auth() {
     password: '',
     'retype-password': '',
   });
-
-  const [errors, setErrors] = useState({
-    email: '',
-    password: '',
-    'retype-password': '',
-  });
-
-  const [apiError, setApiError] = useState('');
 
   const { auth, login } = useAuth();
 
@@ -36,12 +30,7 @@ export function Auth() {
   function handleChange(e) {
     const newValues = { ...values };
     newValues[e.target.name] = e.target.value;
-    const newErrors = { ...errors };
-    newErrors[e.target.name] = '';
-
     setValues(newValues);
-    setErrors(newErrors);
-    setApiError('');
   }
 
   async function handleSubmit(e) {
@@ -73,57 +62,45 @@ export function Auth() {
       }
       history.push(to);
       return null;
-    } else {
-      setApiError(data);
-    }
+    } 
   }
 
   function isFormValid() {
     let isValid = true;
-    let newErrors = { ...errors };
 
     if (!values.email) {
       isValid = false;
-      newErrors.email = 'Please enter your email in order to register!';
     }
 
     if (!values.password) {
-      isValid = false;
-      newErrors.password = 'Please choose a password';
+      isValid = false; 
     }
 
     if (!isLogin && values.password !== values['retype-password']) {
       isValid = false;
-      newErrors['retype-password'] = 'Your passwords did not match!';
     }
-
-    setErrors(newErrors);
     return isValid;
   }
 
   return (
     <form onSubmit={handleSubmit} noValidate={true}>
       <h1>{isLogin ? 'Login' : 'Register'}</h1>
-      {apiError && (
-        <div className="alert alert-danger" role="alert">
-          {apiError}
-        </div>
-      )}
+     
       <div className="mb-3">
-        <label htmlFor="email" className="form-label">
+        <label htmlFor="email" className="login-form-label register-form-label">
           Email address
         </label>
         <input
           type="email"
           id="email"
           name="email"
-          aria-describedby="emailHelp"
           value={values.email}
           onChange={handleChange}
-          className={clsx('form-control', { 'is-invalid': errors.email })}
+          className='login-form-input register-form-input'
+          autoComplete="off"
         />
-        {errors.email && <div className="invalid-feedback">{errors.email}</div>}
-        <label htmlFor="password" className="form-label">
+
+        <label htmlFor="password" className="login-form-label register-form-label">
           Password
         </label>
         <input
@@ -132,12 +109,12 @@ export function Auth() {
           name="password"
           value={values.password}
           onChange={handleChange}
-          className={clsx('form-control', { 'is-invalid': errors.password })}
+          className='login-form-input register-form-input'
+          autoComplete="off"
         />
-        <div className="invalid-feedback">{errors.password}</div>
         {!isLogin && (
           <>
-            <label htmlFor="retype-password" className="form-label">
+            <label htmlFor="retype-password" className="register-form-label">
               Retype Password
             </label>
             <input
@@ -146,11 +123,10 @@ export function Auth() {
               name="retype-password"
               value={values['retype-password']}
               onChange={handleChange}
-              className={clsx('form-control', {
-                'is-invalid': errors['retype-password'],
-              })}
+              className='register-form-input'
+              autoComplete="off"
             />
-            <label htmlFor="fName" className="form-label">
+            <label htmlFor="fName" className="register-form-label">
               First Name
             </label>
              <input
@@ -159,11 +135,10 @@ export function Auth() {
               name="fName"
               value={values['fName']}
               onChange={handleChange}
-              className={clsx('form-control', {
-                'is-invalid': errors['fName'],
-              })}
+              className='register-form-input'
+              autoComplete="off"
             />
-             <label htmlFor="lName" className="form-label">
+             <label htmlFor="lName" className="register-form-label">
               Last Name
             </label>
              <input
@@ -172,15 +147,13 @@ export function Auth() {
               name="lName"
               value={values['lName']}
               onChange={handleChange}
-              className={clsx('form-control', {
-                'is-invalid': errors['lName'],
-              })}
+              className='register-form-input'
+              autoComplete="off"
             />
-  
-            <div className="invalid-feedback">{errors['retype-password']}</div>
+
           </>
         )}
-        <button type="submit" className="btn btn-primary">
+        <button type="submit" className="login-btn register-btn">
           {isLogin ? 'Login' : 'Register'}
         </button>
       </div>

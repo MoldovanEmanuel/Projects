@@ -10,7 +10,7 @@ export function Profile() {
     fetch(`http://localhost:3001/profile`)
     .then((res) => res.json())
     .then((profile) => setProfile(profile))
-  },[])
+  },[]); 
 
   return (
     <>
@@ -23,11 +23,6 @@ export function Profile() {
               <h3>Last Name: {profile.lName}</h3>
               <h3>Password: {profile.password}</h3>
               <h3>Role: {profile.role}</h3>
-        </div>
+        </div>        
     </>
-  );
-}
-
-
-
-
+  )};

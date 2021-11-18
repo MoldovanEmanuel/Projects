@@ -1,6 +1,6 @@
 import styles from './Modal.module.css';
 
-export function Modal({ title, footer, show, onClose, children }) {
+export function Modal({ show, onClose, children }) {
   if (!show) {
     return null;
   }
@@ -8,14 +8,10 @@ export function Modal({ title, footer, show, onClose, children }) {
   return (
     <div className={styles.backdrop}>
       <div className={styles.modal}>
-        <header className={styles.header}>
-          <h2>{title}</h2>
           <button className={styles['close-btn']} onClick={onClose}>
             &times;
           </button>
-        </header>
         <section className={styles.body}>{children}</section>
-        {footer && <footer className={styles.footer}>{footer}</footer>}
       </div>
     </div>
   );

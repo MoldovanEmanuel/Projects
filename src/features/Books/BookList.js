@@ -1,18 +1,19 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useAuth } from '../Auth/Auth.context';
-import { useParams } from 'react-router';
+import { Modal } from '../../components/Modal/Modal';
 
-import styles from './BookList.css'
-import { AddBook } from './AddBook';
+import './BookList.css';
+
 
 export function BooksList() {
   const [ book, setBooks ] = useState(null);
+  const [ showModal, setShowModal ] = useState(false); 
   
   const { auth } = useAuth(); 
   
   useEffect(() => {
-      const book = fetch(`http://localhost:3001/books?userId=${auth?.user.id}`).then((res) =>
+      fetch(`http://localhost:3001/books`).then((res) =>
         res.json().then((res) => setBooks(res))
       );
 }, []);
@@ -24,8 +25,8 @@ function DeleteBook(id) {
         Authorization: `Bearer ${auth?.accessToken}`,
       },
     }, []);
-  console.log(id)
   setBooks(book.filter((book) => book.id !== id));
+  setShowModal(true); 
 }
 
   return (
@@ -37,9 +38,18 @@ function DeleteBook(id) {
               <p key={book.id}>
                  <p><Link to={`/books/${book.id}`}>{book.title}</Link></p>
                  <img src={book.image} alt="" />
-                 <button type="button" onClick={() => DeleteBook(book.id)}>Del</button>
-                 <button type="button" onClick={() => AddBook}>Add New Book</button>
+                 <button type="button" className="delete-book" onClick={() => setShowModal(true)}> Delete This Book</button>
              </p>
+
+      <Modal show={showModal} onClose={() => setShowModal(true)}>
+
+        <form onSubmit={() => DeleteBook} onClick={() => setShowModal(false)}>
+          <p>Are you sure you want to delete this book?</p>
+          <button type="button" className="delete-book" onClick={() => DeleteBook(book.id)}>Yes</button>
+          <button type="button" className="delete-book" onClick={() => setShowModal(false)}>Noo</button>
+        </form>
+
+      </Modal>
         </div>
       ))}
       </div>

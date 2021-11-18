@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react"; 
+import { useState } from "react"; 
 import { useAuth } from "../Auth/Auth.context";
 
 export function AddBook() {
@@ -16,15 +16,10 @@ export function AddBook() {
         ISBN: '', 
         price: '', 
         description: '',
-      }) 
-
-// useEffect(() => {}, []);
-//   setNewBook(newBook);
+      })        
 
 function handleAddBook(e) {
-    // e.preventDefault();
-
-    const addBook = fetch('http://localhost:3001/books', {
+   fetch('http://localhost:3001/books', {
       method: 'POST',
       headers: {
         'Content-type': 'application/json',
@@ -67,6 +62,7 @@ function handleAddBook(e) {
           onChange={handleChange}
           required
           className="edit-input-form"
+          autoComplete="off"
         />
         <label htmlFor="author" className="edit-label-form">Author</label>
         <input
@@ -77,6 +73,7 @@ function handleAddBook(e) {
           onChange={handleChange}
           required
           className="edit-input-form"
+          autoComplete="off"
         />
         <label htmlFor="year" className="edit-label-form">Year</label>
           <input
@@ -87,6 +84,7 @@ function handleAddBook(e) {
           onChange={handleChange}
           required
            className="edit-input-form"
+           autoComplete="off"
         />
         <label htmlFor="genre" className="edit-label-form">Genre</label>
         <input
@@ -97,6 +95,7 @@ function handleAddBook(e) {
           onChange={handleChange}
           required
            className="edit-input-form"
+           autoComplete="off"
         />
         <label htmlFor="language" className="edit-label-form">Lnguage</label>
           <input
@@ -106,7 +105,8 @@ function handleAddBook(e) {
           value={newBook.language}
           onChange={handleChange}
           required
-           className="edit-input-form"
+          className="edit-input-form"
+          autoComplete="off"
         />
         <label htmlFor="pages" className="edit-label-form">Pages</label>
           <input
@@ -116,7 +116,8 @@ function handleAddBook(e) {
           value={newBook.pages}
           onChange={handleChange}
           required
-           className="edit-input-form"
+          className="edit-input-form"
+          autoComplete="off"
         />
         <label htmlFor="ISBN" className="edit-label-form">ISBN</label>
           <input
@@ -126,7 +127,8 @@ function handleAddBook(e) {
           value={newBook.isbn}
           onChange={handleChange}
           required
-           className="edit-input-form"
+          className="edit-input-form"
+          autoComplete="off"
         />
         <label htmlFor="price" className="edit-label-form">Price</label>
           <input
@@ -136,7 +138,8 @@ function handleAddBook(e) {
           value={newBook.price}
           onChange={handleChange}
           required
-           className="edit-input-form"
+          className="edit-input-form"
+          autoComplete="off"
         />
         <label htmlFor="description" className="edit-label-form">Description</label>
           <textarea
@@ -146,7 +149,8 @@ function handleAddBook(e) {
           value={newBook.description}
           onChange={handleChange}
           required
-           className="edit-input-form edit-textarea"
+          className="edit-input-form edit-textarea"
+          autoComplete="off"
         />
 
         <button className="edit-btn" onClick={() => handleAddBook()}>Save</button>

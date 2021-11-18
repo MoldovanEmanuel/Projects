@@ -29,3 +29,15 @@ body {
   border: 1px solid black;
   border-radius: 10px;
 }
+
+.delete-book {
+  display: flex;
+  margin: 10px auto;
+  padding: 10px;
+  background-color: black;
+  color: white;
+}
+
+.delete-book:hover {
+  color: crimson;
+}

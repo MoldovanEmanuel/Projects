@@ -1,15 +1,14 @@
 import { useState, useEffect, useRef } from "react";
 import { useAuth } from '../Auth/Auth.context'
-import { useParams } from "react-router";
 import cn from "classnames";
 import useDynamicHeightField from "./useDynamicHeightField";
 
-import style from './Comments.css'
+
+import './CommentsForm.css'
 
 
 export function CommentsForm(props) {
 
-const {id} = useParams;
 const [book, setBooks] = useState([]);
 
     useEffect(() => {
@@ -96,7 +95,8 @@ const [book, setBooks] = useState([]);
                 type="text"
                 name="name"
                 value={name}
-                onChange={OnChangeName}/>
+                onChange={OnChangeName}
+                autoComplete="off"/>   
             </span>
           </div>
         </div>
@@ -122,7 +122,6 @@ const [book, setBooks] = useState([]);
         </div>
       </form>
     </div>
-
     </>
     )
  };

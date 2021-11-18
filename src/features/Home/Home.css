@@ -1,0 +1,29 @@
+.redirect-to-login {
+  text-decoration: none;
+  margin-left: 20px;
+  border: 1px solid black;
+  padding: 10px;
+  background-color: black;
+  color: white;
+}
+
+.redirect-to-login:hover {
+  color: crimson;
+}
+
+.redirect-to-register {
+  text-decoration: none;
+  margin-left: 20px;
+  border: 1px solid black;
+  padding: 10px;
+  background-color: black;
+  color: white;
+}
+
+.redirect-to-register:hover {
+  color: crimson;
+}
+
+.main-collection {
+  list-style-type: none;
+}

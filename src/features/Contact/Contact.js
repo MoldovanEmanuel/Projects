@@ -7,13 +7,10 @@ export function Contact() {
   const  [contact, setContact ] = useState(null);
 
   useEffect(() => {
-    async function getContact() {
-      const contactNav = await fetch('http://localhost:3000/contact').then((res) =>
-        res.json()
-      );
-    setContact(contactNav);}
-    getContact();
-  }, []);
+     fetch('http://localhost:3000/contact')
+     .then((res) => res.json());
+    setContact(contact);
+  }, [contact]);
 
   return (
     <>

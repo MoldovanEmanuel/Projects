@@ -1,20 +1,20 @@
 import { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
-import { Comment } from '../Comments/Comments';
 import { CommentsForm } from '../Comments/CommentsForm'
+import { Comment } from '../Comments/Comments';
 
-import styles from './BooksDetails.css'
+import './BooksDetails.css'
 
 export function BooksDetails() {
 
-  const { id } = useParams(); // { id: 14 }
+  const { id } = useParams(); 
   
   const [book, setBooks] = useState([]);
 
   useEffect(() => {
     fetch(`http://localhost:3001/books/${id}`)
     .then((res) => res.json())
-    .then((book) => {setBooks(book); console.log(book)});
+    .then((book) => setBooks(book));
   }, [id]); 
 
   return (
@@ -33,36 +33,11 @@ export function BooksDetails() {
         <p className="resume"> <span> Description: </span> <h4 className="resume-text">{book.description}</h4></p>
         <button className="buy-btn">Buy</button>
 
-        <Link to={`/books/edit/${id}`} className="edit-book">Edit this book</Link>
+        <Link to={`/books/edit/${id}`} className="edit-book">Edit This Book</Link>
         </div>
         
         <CommentsForm id={id} />
-        <Comment/>
+        <Comment comments={book.comments}/>
+        
     </>
-  )}; 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  )};

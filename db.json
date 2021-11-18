@@ -47,8 +47,8 @@
       "description": "Four seekers have arrived at the rambling old pile known as Hill House: Dr. Montague, an occult scholar looking for solid evidence of psychic phenomena; Theodora, his lovely assistant; Luke, the future inheritor of the estate; and Eleanor, a friendless, fragile young woman with a dark past. As they begin to cope with horrifying occurrences beyond their control or understanding, they cannot possibly know what lies ahead. For Hill House is gathering its powers - and soon it will choose one of them to make its own. ",
       "comments": [
         {
-          "username": " ema",
-          "text": "asdasdasd"
+          "username": "Andrei",
+          "text": "The Netflix's version was a lot better."
         }
       ]
     },
@@ -64,7 +64,12 @@
       "image": "../images/the-raven.jpg",
       "price": 15,
       "description": "This selection of Edgar Allan Poe’s poetical works includes some of his best-known pieces, including the triumphant, gleeful ‘The Bells’, the tragic ode ‘Annabel Lee’ and his famous gothic tour de force, ‘The Raven’. Some present powerful, nightmarish images of the macabre and bizarre, while others have at their heart a profound sense of love, beauty and loss. All are linguistic masterpieces that demonstrate Poe’s gift for marrying rhythm, form and meaning. An American writer of primarily prose and literary criticism, Edgar Allen Poe never ceased writing poetry throughout his turbulent life, and is today regarded as a central figure of American literary romanticism. ",
-      "comments": []
+      "comments": [
+        {
+          "username": "Ema",
+          "text": "This book has a lot of great poems, but it's quite short. "
+        }
+      ]
     },
     {
       "id": 5,
@@ -133,7 +138,8 @@
       "ISBN": "978-0-00-742022-3",
       "price": 19.99,
       "image": "../images/the-poe.jpg",
-      "description": "Including Poe's most terrifying, grotesque and haunting short stories, Tales of Mystery and Imagination is the ultimate collection of the infamous author's macabre works. Considered to be one of the earliest American writers to encapsulate the genre of detective-fiction, the collection features some of his most popular tales.'The Gold-Bug' is the only tale that was popular in his lifetime, whereas 'The Black Cat', 'The Pit and the Pendulum' and 'The Murders in the Rue Morgue' became more widely read after his death. Focussing on the internal conflict of individuals, the power of the dead over the living, and psychological explorations of darker human emotion that appear to anticipate Sigmund Freud's later theories on the psyche, Poe's Gothic terror stories are considered masterpieces the world over."
+      "description": "Including Poe's most terrifying, grotesque and haunting short stories, Tales of Mystery and Imagination is the ultimate collection of the infamous author's macabre works. Considered to be one of the earliest American writers to encapsulate the genre of detective-fiction, the collection features some of his most popular tales.'The Gold-Bug' is the only tale that was popular in his lifetime, whereas 'The Black Cat', 'The Pit and the Pendulum' and 'The Murders in the Rue Morgue' became more widely read after his death. Focussing on the internal conflict of individuals, the power of the dead over the living, and psychological explorations of darker human emotion that appear to anticipate Sigmund Freud's later theories on the psyche, Poe's Gothic terror stories are considered masterpieces the world over.",
+      "comments": []
     },
     {
       "id": 1,
@@ -151,10 +157,6 @@
         {
           "username": "Barbu",
           "text": "I really hate this book"
-        },
-        {
-          "username": " ema",
-          "text": "asdasdasd"
         }
       ]
     },
@@ -170,18 +172,6 @@
       "price": 20,
       "image": "../images/the-reprieve.jpg",
       "description": "A chilling and blisteringly relevant literary novel of social horror centered around a brutal killing that takes place in a full-contact haunted escape room—a provocative exploration of capitalism, hate politics, racial fetishism, and our obsession with fear as entertainment."
-    },
-    {
-      "id": 14,
-      "title": "WQDQWD",
-      "author": "DQWDQ",
-      "year": "123",
-      "genre": "QFFQ",
-      "language": "WFEWQF",
-      "pages": "123",
-      "ISBN": "12123",
-      "price": "123",
-      "description": "QEFQFQEF"
     }
   ]
 }

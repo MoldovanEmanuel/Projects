@@ -1,0 +1,130 @@
+
+header {
+    background-color: whitesmoke;
+}
+
+nav {
+    display: flex;
+    justify-content: baseline;
+    padding: 20px;
+}
+
+nav h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    margin-left: 200px;
+}
+
+nav h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+    margin-top: 48px;
+    margin-left: 15px;
+    color: grey;
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-evenly;
+    width: 800px;
+    height: 400px;
+    margin: 30px auto;
+    background-color: whitesmoke;
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+}
+
+.divleft {
+    width: 50%;
+    margin-top: 10px;
+}
+
+.divright {
+    width: 45%;
+    margin-top: 10px;
+}
+
+.divleft label {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+}
+   
+.button {
+    width: 40%;
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: 55%;
+    border: lightgray;
+    border-radius: 4px;
+    background-color: cornflowerblue;
+    color: white;
+}
+
+.divleft ::placeholder {
+    font-size: 15px;
+    color: gray;
+}
+
+.divright ::placeholder {
+    font-size: 15px;
+    color: gray;
+}
+
+.divleft input {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.divright textarea {
+    margin-top: 10px;
+}
+
+input[type='text'] {
+    width: 350px;
+    padding: 10px;
+    padding-top: 10px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
+
+textarea[type='text'] { 
+    padding: 20px;
+    padding-bottom: 10%;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    padding-bottom: 3px;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 20px;
+}
+
+.line {
+    display: block;
+    width: 16%;
+    border: 1px solid #F5F5F5;
+}
+
+.social-media a {
+    display: flex;
+    text-decoration: none;
+    padding: 60px;
+    padding-top: 0px;
+    color: cornflowerblue;
+}
+   

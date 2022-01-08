@@ -1,0 +1,106 @@
+body {
+    width: 100%;
+    height: 755px;
+    
+}
+
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    margin: 0 auto;
+    border: 1px solid black;
+
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.confirmation-banner { 
+    border: 1px solid grey;
+    font-size: 20px;
+    background-color: #98FB98;
+    color: green;
+    margin: 0 auto;
+    margin-top: 15%;
+    margin-bottom: 20px;
+    width: 500px;
+
+}
+
+.check-icon {
+    margin: 10px;  
+}
+
+.x-icon {
+    margin-left: 40%;
+}
+
+
+.info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 20px 40px;
+    width: 100%;
+}
+
+.gender {
+    display: grid;
+    grid-template-columns: 70px 25px;
+    grid-template-rows: 40px 20px 20px;
+    grid-template-areas: 
+        "g  .  ."
+        ".  r m"
+        ".  h f"
+}
+
+p {
+    grid-area: g;
+}
+
+
+
+input[type='text'] {
+    margin-bottom: 20px;
+    width: 100%;
+    height: 5%;
+}
+
+input[id='fem'] {
+    grid-area: h;
+}
+
+input[id='masc'] {
+    grid-area: r;
+}
+  
+
+label[for='masc'] {
+   grid-area: m;
+   margin-right: 60%;
+}
+
+label[for='fem'] {
+    grid-area: f;
+ }
+ 
+textarea {
+    margin-top: 20px;
+    width: 400px;
+}
+
+.submit {
+    width: 20%;
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: 80%;
+    border: lightgray;
+    border-radius: 4px;
+    background-color: cornflowerblue;
+    color: white;
+}

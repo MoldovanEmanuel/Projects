@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <script src="form.js" defer></script>
+    <script src="https://kit.fontawesome.com/3773664a7c.js" crossorigin="anonymous"></script>
+    <title>Form Homework</title>
+</head>
+
+<body>
+
+    <section class="comments-list" data-comments-list></section>
+
+    <section class="content">
+
+        <div class="info">
+            <form id="form" class="comments-form" data-comments-form>
+                <label for="fName"></label>
+                <input type="text" name="fName" id="fName" placeholder="First Name" required minlength="3" maxlength="15" pattern="[a-zA-Z]+"> 
+                <label for="lName"></label>
+                <input type="text" name="lName" id="lName" placeholder="Last Name" required minlength="3" maxlength="15" pattern="[a-zA-Z]+">
+                <div class="gender">
+                    <p id='gender-m-f'>Gender</p>
+                    <input type="radio" id="masc" name="Gender" value="M" required>
+                    <label for="masc">M</label>
+                    <input type="radio" id="fem" name="Gender" value="F" required>
+                    <label for="fem">F</label>
+                </div>
+                <textarea name="extrainfo" id="message" cols="30" rows="10" placeholder="Your message here..."
+                    class="comments-list" data-comments-list></textarea>
+                <button type="submit" id='submit ' class="submit" value="Submit">Submit</button>
+        </div>
+
+        </form>
+    </section>
+
+</body>
+
+</html>
